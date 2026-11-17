@@ -2,7 +2,7 @@
 
 A clean, minimalist, and responsive personal technical blog for sharing field notes, projects, and insights on Cloud Infrastructure, Cyber Security, and Systems Administration.
 
-🌐 **[Visit the Live Blog Here](https://ranaabdelsalamm.github.io/0xjmra/)**
+🌐 **[Visit the Live Blog Here](https://0xjmra.github.io/blog/)**
 
 ## 📸 Preview
 ![Blog Screenshot](assets/screenshot.png)
