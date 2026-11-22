@@ -553,4 +553,13 @@ body.modal-open {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+  
+  .post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto;
+  border: 1px solid var(--accent);
+  border-radius: 0.5rem;
+ }
 }
