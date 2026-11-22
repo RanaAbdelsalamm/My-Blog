@@ -553,13 +553,16 @@ body.modal-open {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-  
-  .post-content img {
+}
+
+.post-content img {
   display: block;
-  max-width: 100%;
+  width: auto;
+  max-width: min(100%, 620px);
+  max-height: 440px;
   height: auto;
   margin: 1.25rem auto;
   border: 1px solid var(--accent);
-  border-radius: 0.5rem;
- }
+  border-radius: 0.6rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
 }
