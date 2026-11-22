@@ -55,6 +55,13 @@ function formatDate(value) {
   }).format(date);
 }
 
+function parseMarkdownContent(content) {
+  if (!content) return "";
+  // Automatically rewrite image paths from images/... or ./images/... to assets/images/...
+  const fixedContent = content.replace(/!\[(.*?)\]\((?:\.\/)?images\//gi, '![$1](assets/images/');
+  return window.marked ? window.marked.parse(fixedContent) : escapeHtml(fixedContent);
+}
+
 async function loadPosts() {
   const manifestResponse = await fetch("./posts/index.json");
   if (!manifestResponse.ok) throw new Error("Unable to read the post manifest.");
@@ -114,7 +121,7 @@ function renderPosts() {
           </div>
           <div class="post-expand" id="${postId}-content">
             <div class="post-expand-inner">
-              <div class="post-content">${window.marked ? window.marked.parse(post.content) : escapeHtml(post.content)}</div>
+              <div class="post-content">${parseMarkdownContent(post.content)}</div>
             </div>
           </div>
         </article>`;
