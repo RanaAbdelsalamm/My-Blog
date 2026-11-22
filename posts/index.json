@@ -1,9 +1,5 @@
-[
 {
-"title": "Deploying a Fault-Tolerant Web Architecture on AWS with CloudFormation",
-"date": "2026-11-22",
-"category": "Cloud",
-"summary": "Automating a Multi-AZ high-availability VPC, Application Load Balancer, Auto Scaling Group, and least-privilege Security Groups on AWS using Infrastructure as Code.",
-"file": "posts/aws-high-availability-architecture.md"
+  "posts": [
+    "aws-high-availability-architecture.md"
+  ]
 }
-]
